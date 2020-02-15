@@ -1,0 +1,5 @@
+1. Employee (Model)
+2. EmployeeAPI (Requests)
+3. BaseRepository (Base class)
+4. EmployeeRepository(Interface)
+5. EmployeeRepositoryImpl(extends BaseRepository and implements EmployeeRepository)
