@@ -10,16 +10,16 @@ public class Employee {
     @SerializedName("id")
     private int id;
 
-    @SerializedName("name")
+    @SerializedName("employee_name")
     private String name;
 
-    @SerializedName("age")
+    @SerializedName("employee_age")
     private int age;
 
-    @SerializedName("salary")
+    @SerializedName("employee_salary")
     private int salary;
 
-    @SerializedName("picture")
+    @SerializedName("profile_picture")
     private String image;
 
     public int getId() {

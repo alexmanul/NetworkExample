@@ -14,6 +14,7 @@ import java.util.List;
 import io.reactivex.Observable;
 
 public class EmployeeRepositoryImpl extends BaseRepository<EmployeeAPI> implements EmployeeRepository {
+    final String IMAGE_URL = "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg";
 
     @Override
     public Observable<List<Employee>> getEmployees() {
@@ -35,7 +36,7 @@ public class EmployeeRepositoryImpl extends BaseRepository<EmployeeAPI> implemen
                         employee.setImage(object.get("profile_image").getAsString());
 
                         if (TextUtils.isEmpty(employee.getImage())) {
-                            employee.setImage("https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg");
+                            employee.setImage(IMAGE_URL);
                         }
 
                         employees.add(employee);
