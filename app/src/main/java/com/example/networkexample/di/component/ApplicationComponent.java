@@ -5,7 +5,6 @@ import android.app.Application;
 import com.example.networkexample.application.MyApplication;
 import com.example.networkexample.di.builder.ActivityBuilder;
 import com.example.networkexample.di.module.NetworkModule;
-import com.example.networkexample.di.module.NetworkModule;
 import com.example.networkexample.di.module.RecyclerViewModule;
 
 import javax.inject.Singleton;

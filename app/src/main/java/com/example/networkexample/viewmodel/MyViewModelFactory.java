@@ -14,6 +14,7 @@ public class MyViewModelFactory implements ViewModelProvider.Factory {
         repository = employeeRepository;
     }
 
+    @SuppressWarnings("unchecked")
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {

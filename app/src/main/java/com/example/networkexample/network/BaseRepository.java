@@ -17,7 +17,7 @@ public abstract class BaseRepository<T> {
                     .unsubscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread());
 
-    private Retrofit retrofit;
+    private final Retrofit retrofit;
 
     public BaseRepository() {
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();

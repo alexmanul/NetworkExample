@@ -6,7 +6,7 @@ import com.example.networkexample.network.EmployeeRepository;
 
 public class MyViewModel extends ViewModel {
 
-    private EmployeeRepository repository;
+    private final EmployeeRepository repository;
 
     public MyViewModel(EmployeeRepository employeeRepository) {
         repository = employeeRepository;
